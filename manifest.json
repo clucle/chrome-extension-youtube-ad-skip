@@ -1,7 +1,7 @@
 {
     "name": "youtube ad skip",
     "description": "auto click close button for non youtube premium",
-    "version": "1.1",
+    "version": "1.2",
     "manifest_version": 3,
     "content_scripts": [{
         "matches": ["https://www.youtube.com/*"],
@@ -13,3 +13,4 @@
         "64": "/images/youtube-icon.png"
     }
 }
+

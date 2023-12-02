@@ -3,8 +3,10 @@ function SkipAd() {
         .concat(Array.from(document.getElementsByClassName('ytp-ad-overlay-close-button')))
         .concat(Array.from(document.getElementsByClassName('ytp-ad-skip-button-modern')))
         .forEach(function(element) {
-            element.click();
-        });
+            element.click(function(e){
+                e.stopImmediatePropagation();
+            });
+	});
 }
 
 var timer = null;
